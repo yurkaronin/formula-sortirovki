@@ -14,4 +14,51 @@ img {
 
 a {
   text-decoration: none;
+  font-family: inherit;
+}
+
+/* Служебные стили */
+.visually-hidden {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+}
+
+.body {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 130%;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 45px;
+  margin: 0 auto;
+}
+
+.desktop-hide {
+  display: none;
+}
+
+.hide {
+  font-size: 0;
+  line-height: 0;
+  opacity: 0;
 }

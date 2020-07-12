@@ -1,9 +1,16 @@
 /* normalize.scss */
-@import "../../node_modules/normalize.scss/sass/normalize.scss";
+@import "normalize.scss";
 
 /* Глобальные стили */
 @import "variables.scss";
 @import "fonts.scss";
 @import "global.scss";
 
-/* Блоки */
+/* BEM Блоки */
+@import "blocks/telephone.scss";
+@import "blocks/messengers.scss";
+@import "blocks/button.scss";
+@import "blocks/navigation.scss";
+
+/* Секции */
+@import "sections/header.scss";

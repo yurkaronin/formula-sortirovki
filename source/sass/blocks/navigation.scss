@@ -1,0 +1,32 @@
+.navigation__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.navigation__item {
+  max-width: 170px;
+}
+
+.navigation__link {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 20px 10px;
+  display: inline-block;
+}
+
+.navigation__link:hover,
+.navigation__link:focus,
+.navigation__link:active {
+  color: #C09E32;
+}
+
+
