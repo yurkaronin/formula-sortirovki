@@ -63,6 +63,12 @@ a {
   opacity: 0;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 25px;
+  }
+}
+
 
 @media (max-width: 768px) {
   .container {
