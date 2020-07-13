@@ -1,5 +1,4 @@
 .header {
-  padding: 15px 0 0;
   background: #F5F5F5;
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.07);
 }
@@ -9,6 +8,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  padding: 15px 0 0;
 }
 
 .header__logo {
@@ -49,4 +49,59 @@
 .header__navigation {
   max-width: 100%;
   width: 100%;
+}
+
+
+@media (max-width: 1200px) {
+  .header__logo {
+    max-width: 175px;
+  }
+
+  .header__image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .header__logo-description,
+  .header__telephone {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__wrapper {
+    padding: 10px 0;
+  }
+
+  .header__messengers {
+    max-width: 100px;
+  }
+
+  .header__navigation {
+    max-width: 45px;
+  }
+
+  .navigation__list,
+  .header__button {
+    display: none;
+  }
+
+  .header__logo {
+    max-width: 140px;
+  }
+
+}
+
+@media (max-width: 410px) {
+  .header__logo {
+    max-width: 100px;
+}
+  .header__messengers {
+    max-width: 90px;
+  }
+
+  .header__navigation {
+    max-width: 25px;
+  }
+
 }
