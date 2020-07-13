@@ -3,14 +3,15 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 100%;
-  text-align: center;
   color: $black;
   font-family: 'Noto Sans SC', sans-serif;
-  padding: 15px 25px;
+  padding: 15px 25px 17px;
   border: 2px solid $color-3;
   background-color: $color-3;
-  display: inline-block;
-  max-width: 295px;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button--transparent {
@@ -28,7 +29,7 @@
 @media (max-width: 768px) {
   .button {
     font-size: 12px;
-    padding: 10px 15px;
+    padding: 10px 15px 12px;
   }
 
 }
