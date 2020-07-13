@@ -18,7 +18,7 @@
   font-size: 14px;
   line-height: 19px;
   text-transform: uppercase;
-  color: #000000;
+  color: $black;
   padding: 20px 10px;
   display: inline-block;
 }
@@ -26,7 +26,15 @@
 .navigation__link:hover,
 .navigation__link:focus,
 .navigation__link:active {
-  color: #C09E32;
+  color: $color-2;
 }
 
+@media (max-width: 768px) {
+  .navigation__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
 
+}

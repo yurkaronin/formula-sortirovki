@@ -42,6 +42,10 @@
   max-width: 220px;
 }
 
+.header__burger {
+  max-width: 45px;
+}
+
 .header__link {
   max-width: 100%;
 }
@@ -77,11 +81,7 @@
     max-width: 100px;
   }
 
-  .header__navigation {
-    max-width: 45px;
-  }
-
-  .navigation__list,
+  .header__navigation,
   .header__button {
     display: none;
   }
@@ -95,12 +95,13 @@
 @media (max-width: 410px) {
   .header__logo {
     max-width: 100px;
-}
+  }
+
   .header__messengers {
     max-width: 90px;
   }
 
-  .header__navigation {
+  .header__button {
     max-width: 25px;
   }
 

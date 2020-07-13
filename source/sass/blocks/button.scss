@@ -4,19 +4,19 @@
   font-size: 16px;
   line-height: 100%;
   text-align: center;
-  color: #000000;
+  color: $black;
   font-family: 'Noto Sans SC', sans-serif;
   padding: 15px 25px;
-  border: 2px solid #ffc81b;
-  background-color: #ffc81b;
+  border: 2px solid $color-3;
+  background-color: $color-3;
   display: inline-block;
   max-width: 295px;
 }
 
 .button--transparent {
-  border: 2px solid #C09E32;
+  border: 2px solid $color-2;
   background-color: transparent;
-  color: #000000;
+  color: $black;
 }
 
 @media (max-width: 768px) {

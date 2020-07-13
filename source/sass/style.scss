@@ -3,7 +3,6 @@
 
 /* Глобальные стили */
 @import "variables.scss";
-@import "fonts.scss";
 @import "global.scss";
 
 /* BEM Блоки */
@@ -12,7 +11,6 @@
 @import "blocks/button.scss";
 @import "blocks/navigation.scss";
 @import "blocks/burger-menu.scss";
-
 
 /* Секции */
 @import "sections/header.scss";
