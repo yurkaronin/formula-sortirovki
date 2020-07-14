@@ -12,42 +12,46 @@
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .products__item {
   max-width: 255px;
-  width: 100%;
-  height: 194px;
+  margin: 0;
 }
 
-.products__link {
-  background-image: url("../img/products/agriculture/1.jpg");
-  width: 100%;
-  height: 100%;
-  display: block;
+.products__wrapper {
   position: relative;
-  background-position: center;
-  cursor: pointer;
-  /* border: 5px solid transparent; */
+  margin-bottom: 50px;
 }
 
-.products__link::after {
+.products__image {
+  display: block;
+  filter: brightness(65%);
+}
+
+.products__wrapper:hover,
+.products__wrapper:focus {
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.71);
+}
+
+.products__wrapper:hover::after,
+.products__wrapper:focus::after {
   content: "";
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%);
-  position: absolute;
+  border: 5px solid $color-3;
+  display: block;
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-.products__link:hover::after,
-.products__link:active::after,
-.products__link:focus::after {
-  border: 5px solid #FFC81B;
-}
-
-.products__link:hover::before,
-.products__link:active::before,
-.products__link:focus::before {
+.products__wrapper:hover::before,
+.products__wrapper:focus::before {
   content: "";
   background-image: url("../img/icons/icon-arrow-yellow-down.svg");
   position: absolute;
@@ -57,6 +61,39 @@
   bottom: -30px;
   background-size: cover;
   background-position: center;
+}
+
+.products__list--sub {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.products__item:hover .products__list--sub {
+  opacity: 1;
+  visibility: visible;
+  z-index: 11;
+}
+
+.products__list--sub .products__wrapper:hover,
+.products__list--sub .products__wrapper:focus {
+  box-shadow: none;
+}
+
+.products__list--sub .products__wrapper:hover::before,
+.products__list--sub .products__wrapper:focus::before,
+.products__list--sub .products__wrapper:hover::after,
+.products__list--sub .products__wrapper:focus::after {
+  display: none;
 }
 
 .products__name {
@@ -71,4 +108,103 @@
   left: 25px;
   bottom: 25px;
   z-index: 2;
+}
+
+.products__list--sub .products__name {
+  position: initial;
+  color: $black;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  padding-top: 15px;
+}
+
+.products__list::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../img/background/bg-products-1-left.png");
+  background-repeat: no-repeat;
+  width: 216px;
+  height: 226px;
+  left: -199px;
+  bottom: -10px;
+  z-index: -1;
+}
+
+.products__list::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../img/background/bg-products-1-right.png");
+  background-repeat: no-repeat;
+  width: 192px;
+  height: 123px;
+  right: -75px;
+  top: -80px;
+  z-index: -1;
+}
+
+@media (max-width: 1100px) {
+
+  .products__list::before,
+  .products__list::after {
+    display: none;
+  }
+
+  .products__item {
+    max-width: 25%;
+    width: 100%;
+  }
+
+  .products__name {
+    font-size: 80%;
+    max-width: 85%;
+  }
+
+  .products__wrapper {
+    margin-bottom: 0;
+  }
+
+  .products__list--sub .products__name {
+    font-size: 80%;
+    padding-top: 5px;
+    margin-bottom: 20px;
+    max-width: 85%;
+  }
+
+  .products__wrapper:hover::before,
+  .products__wrapper:focus::before {
+    display: none;
+  }
+
+  .products__list--sub {
+    justify-content: flex-start;
+  }
+
+  .products__list--sub .products__item {
+    padding: 10px 5px 5px;
+    max-width: 20%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .products__name {
+    font-size: 60%;
+  }
+
+}
+
+@media (max-width: 410px) {
+  .products__name {
+    font-size: 50%;
+    left: 10px;
+    bottom: 10px;
+  }
+
+  .products__list--sub .products__name {
+    font-size: 60%;
+  }
+
 }
