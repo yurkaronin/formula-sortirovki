@@ -62,16 +62,8 @@
   color: $color-3;
 }
 
-@media (max-width: 450px) {
-  .video-gallery__list {
-    flex-direction: column;
-  }
-
-  .video-gallery__item {
-    max-width: 100%;
-  }
-
-  .video-gallery__item::before {
-    bottom: 30px;
+@media (max-width: 768px) {
+  .video-gallery {
+    display: none;
   }
 }

@@ -1,11 +1,30 @@
 .benefits {
   list-style: url("../img/icons/icon-marker.svg");
   padding-left: 15px;
+  margin: 0;
 }
 
 .benefits__item {
   color: $white;
   font-size: 16px;
   margin-bottom: 30px;
+}
 
+@media (max-width: 1200px) {
+  .benefits__item {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .benefits__item {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 410px) {
+  .benefits__item {
+    margin-bottom: 15px;
+  }
 }
