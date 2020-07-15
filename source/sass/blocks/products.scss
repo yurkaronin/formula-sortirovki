@@ -1,7 +1,12 @@
 .products {
-  padding: 30px 0 88px;
+  padding: 22px 0 25px;
   background-color: $white;
   color: $black;
+}
+
+.products__title {
+  max-width: 700px;
+  margin-bottom: 50px;
 }
 
 .products__list {
