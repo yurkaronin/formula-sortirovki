@@ -22,7 +22,7 @@
   position: relative;
 }
 
-.video-gallery__item::after {
+/* .video-gallery__item::after {
   content: "";
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%);
   position: absolute;
@@ -31,7 +31,7 @@
   top: 0;
   left: 0;
   z-index: 0;
-}
+} */
 
 .video-gallery__item::before {
   content: "";

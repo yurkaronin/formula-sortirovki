@@ -1,5 +1,7 @@
 .sorting-lines {
   background-color: $gray;
+  z-index: 2;
+  position: relative;
 }
 
 .sorting-lines__wrapper {
