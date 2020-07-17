@@ -1,0 +1,109 @@
+.profit {
+  padding: 70px 0;
+  margin-top: -483px;
+}
+
+.profit__title {
+  margin-bottom: 25px;
+}
+
+.profit__subtitle {
+  margin: 0;
+  margin-bottom: 55px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.profit__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+}
+
+.profit__item {
+  max-width: 350px;
+  margin-bottom: 30px;
+  min-height: 405px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.07);
+}
+
+.profit__wrapper {
+  padding: 10px 20px;
+}
+
+.profit__item {
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.profit__item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../img/icons/icon-profit-1.png");
+  background-repeat: no-repeat;
+  width: 95px;
+  height: 76px;
+  right: 10px;
+  top: 10px;
+}
+
+.profit__item:nth-child(2)::after {
+  background-image: url("../img/icons/icon-profit-2.png");
+  width: 80px;
+  height: 80px;
+}
+
+.profit__item:nth-child(3)::after {
+  background-image: url("../img/icons/icon-profit-3.png");
+  width: 71px;
+  height: 81px;
+}
+
+.profit__item:nth-child(4)::after {
+  background-image: url("../img/icons/icon-profit-4.png");
+  width: 80px;
+  height: 60px;
+}
+
+.profit__item:nth-child(5)::after {
+  background-image: url("../img/icons/icon-profit-5.png");
+  width: 78px;
+  height: 78px;
+}
+
+.profit__item:nth-child(6)::after {
+  background-image: url("../img/icons/icon-profit-6.png");
+  width: 73px;
+  height: 82px;
+}
+
+@media (max-width: 768px) {
+  .profit {
+    margin-top: 0;
+  }
+
+  .profit__item {
+    max-width: 47%;
+  }
+}
+
+@media (max-width: 500px) {
+  .profit {
+    padding: 40px 0 20px;
+  }
+
+  .profit__item {
+    max-width: 350px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,36 @@
+.developers {
+  background-color: #4f4f4f;
+  color: $white;
+  padding: 25px 0 20px;
+}
+
+.developers p {
+  margin: 0;
+}
+
+.developers__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.developers__text {
+  max-width: 820px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 140%;
+}
+
+.developers__link {
+  max-width: 210px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-decoration-line: underline;
+  color: $color-3;
+}

@@ -1,0 +1,39 @@
+.test {
+  background-color: $color-2;
+  color: $white;
+  padding: 75px 0 40px;
+  background-image: url("../img/background/bg-test.jpg");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.test__title {
+  color: $white;
+  margin-bottom: 30px;
+}
+
+.test__info {
+  max-width: 40%;
+  margin: 0 0 0 auto;
+  padding: 20px;
+  background-color: $color-2;
+
+}
+
+.test__description {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1000px) {
+  .test {
+    background-image: none;
+    padding: 40px 0;
+  }
+
+  .test__info {
+    max-width: 100%;
+  }
+}
+
