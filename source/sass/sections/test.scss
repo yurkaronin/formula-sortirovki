@@ -26,6 +26,14 @@
   margin-bottom: 30px;
 }
 
+.test__button:hover,
+.test__button:focus,
+.test__button:active {
+  background-color: $white;
+  color: $black;
+  border: 2px solid $black;
+}
+
 @media (max-width: 1000px) {
   .test {
     background-image: none;

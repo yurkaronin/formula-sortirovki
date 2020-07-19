@@ -65,6 +65,7 @@ $(document).ready(function () {
 		}
   });
 
+  /* Шаги в нижних блоках сайта  */
   $('.steps__item').mouseenter(function () {
     var stepId = $('#' + $(this).attr('rel'));
     $('.steps__photo-item').hide();
