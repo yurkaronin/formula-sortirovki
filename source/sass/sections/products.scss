@@ -63,11 +63,14 @@
   background-image: url("../img/icons/icon-arrow-yellow-down.svg");
   position: absolute;
   display: block;
-  width: 44px;
-  height: 33px;
-  bottom: -30px;
+  width: 40px;
+  height: 30px;
+  bottom: 50px;
+  left: -5px;
   background-size: cover;
   background-position: center;
+  z-index: 1;
+  transform: rotate(-90deg);
 }
 
 .products__list--sub {

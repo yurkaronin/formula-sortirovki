@@ -1,119 +1,35 @@
-/* .slider-top {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.slider-top__item {
-  position: relative;
-}
-
-.slider-top__item::before {
-  content: "";
-  background-image: url("../img/slider-top/slider-items-1.png");
+.slider-top {
   position: absolute;
-  width: 100%;
-  height: 100%;
-} */
-
-/* Левые стили  */
-.body_slides {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  background: #000;
-}
-
-.body_slides,
-.body_slides:after {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-}
-
-.body_slides:after {
-  content: '';
-  background: transparent url(images/pattern.png) repeat top left;
-}
-
-
-.body_slides li {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
   left: 0;
-  background-size: cover;
-  background-repeat: none;
-  opacity: 0;
-  -webkit-animation: anim_slides 18s linear infinite 0s;
-  -moz-animation: anim_slides 18s linear infinite 0s;
-  -o-animation: anim_slides 18s linear infinite 0s;
-  -ms-animation: anim_slides 18s linear infinite 0s;
-  animation: anim_slides 18s linear infinite 0s;
-}
+  top: 0;
+  bottom: 0;
+  right: 0;
+  &::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.body_slides li:nth-child(1) {
-  background-image: url("../img/slider-top/slider-items-1.png")
-}
-
-.body_slides li:nth-child(2) {
-  -webkit-animation-delay: 6.0s;
-  -moz-animation-delay: 6.0s;
-  background-image: url("../img/slider-top/slider-items-2.png")
-}
-
-.body_slides li:nth-child(3) {
-  -webkit-animation-delay: 12.0s;
-  -moz-animation-delay: 12.0s;
-  background-image: url("../img/slider-top/slider-items-3.png")
-}
-
-@-webkit-keyframes anim_slides {
-  0% {
+  }
+  &__image {
     opacity: 0;
+    transition: opacity 1s ease-in-out, transform 3s ease-in-out;
+    transform: scale(0.8);
+  }
+  .swiper-slide-active {
+    .slider-top__image {
+      opacity: 1;
+      transform: scale(1);
+    }
   }
 
-  6% {
-    opacity: 1;
-  }
-
-  24% {
-    opacity: 1;
-  }
-
-  30% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-@-moz-keyframes anim_slides {
-  0% {
-    opacity: 0;
-  }
-
-  6% {
-    opacity: 1;
-  }
-
-  24% {
-    opacity: 1;
-  }
-
-  30% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 0;
-  }
 }

@@ -63,9 +63,20 @@ a {
   opacity: 0;
 }
 
+.none-scroll {
+  overflow: hidden;
+  padding-right: 17px;
+}
+
 @media (max-width: 1200px) {
   .container {
     padding: 0 25px;
+  }
+}
+
+@media (max-width: 1024) {
+  .none-scroll {
+    padding-right: 0;
   }
 }
 
