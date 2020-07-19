@@ -1,3 +1,4 @@
+/* Прогресс бар в шапке сайта  */
 var progress = document.querySelector('.progress-bar');
 
 window.addEventListener('scroll', progressBar);
@@ -10,6 +11,7 @@ function progressBar(e) {
   progress.style.width = result + '%';
 }
 
+/* Плавная прокрутка по якорям в меню к выбранным блокам  */
 function slowScroll(id) {
   var offset = 0;
   $('html, body').animate({
@@ -17,3 +19,10 @@ function slowScroll(id) {
   }, 1000);
   return false;
 }
+
+/* Бургер меню  */
+$(document).ready(function(){
+	$('#nav-icon').click(function(){
+		$(this).toggleClass('open');
+	});
+});
