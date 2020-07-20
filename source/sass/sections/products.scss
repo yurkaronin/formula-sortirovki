@@ -43,6 +43,10 @@
   box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.71);
 }
 
+.products__link:active {
+  box-shadow: none;
+}
+
 .products__link:hover::after,
 .products__link:focus::after {
   content: "";

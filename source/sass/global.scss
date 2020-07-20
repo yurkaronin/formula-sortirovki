@@ -74,9 +74,10 @@ a {
   }
 }
 
-@media (max-width: 1024) {
+@media (max-width: 1024px) {
   .none-scroll {
-    padding-right: 0;
+    padding: 0;
+    padding-right: 0 !important;
   }
 }
 
