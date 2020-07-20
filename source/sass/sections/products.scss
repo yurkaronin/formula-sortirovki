@@ -234,3 +234,22 @@
   }
 
 }
+
+.products__link--empty,
+.products__link--empty:focus,
+.products__link--empty:active,
+.products__link--empty:visited {
+  opacity: 1;
+}
+
+.products__link--empty:hover::before,
+.products__link--empty:hover::after,
+.products__link--empty::before,
+.products__link--empty::after {
+  display: none;
+}
+
+.products__link--empty:focus,
+.products__link--empty:hover {
+  box-shadow: none;
+}
