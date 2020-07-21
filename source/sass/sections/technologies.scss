@@ -107,6 +107,11 @@
   z-index: 1;
 }
 
+.technologies__image {
+  display: block;
+  width: 100%;
+}
+
 @media (max-width: 1145px) {
   .technologies__item {
     max-width: 100%;
