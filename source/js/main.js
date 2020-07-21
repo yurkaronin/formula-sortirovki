@@ -83,3 +83,15 @@ $(document).ready(function () {
   });
 
 });
+
+/* табы в подвале */
+$(document).ready(function() {
+  $('.footer__title').click(function(event) {
+    if($('.footer__list').hasClass('one')){
+      $('.footer__title').not($(this)).removeClass('active');
+      $('.footer__details-item').not($(this).next()).slideUp(300);
+    }
+    $(this).toggleClass('active').next().slideToggle(300);
+  });
+});
+
