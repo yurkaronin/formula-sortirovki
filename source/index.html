@@ -1,3 +1,7 @@
+<!-- <?php
+  session_start();
+  $_SESSION['GET'] = $_GET;
+?> -->
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -159,9 +163,20 @@
     <section class="video-gallery">
       <h2 class="visually-hidden">Основные направления в промышленности, которым требуются наши услуги</h2>
       <ul class="video-gallery__list">
-        <li class="video-gallery__item"><span class="video-gallery__title">Сельское хозяйство</span></li>
-        <li class="video-gallery__item"><span class="video-gallery__title">Пищевая промышленность</span></li>
-        <li class="video-gallery__item"><span class="video-gallery__title">Вторсырьё</span></li>
+        <li class="video-gallery__item">
+          <span class="video-gallery__title">Сельское хозяйство</span>
+          <video class="video-gallery__video" poster="video/1.jpg">
+            <source src="video/1.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;"></video>
+        </li>
+        <li class="video-gallery__item">
+          <span class="video-gallery__title">Пищевая промышленность</span>
+          <video class="video-gallery__video" poster="video/2.jpg">
+            <source src="video/2.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;"></video>
+        </li>
+        <li class="video-gallery__item"><span class="video-gallery__title">Вторсырьё</span>
+          <video class="video-gallery__video" poster="video/3.jpg">
+            <source src="video/3.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;"></video>
+        </li>
       </ul>
     </section>
 
@@ -310,9 +325,7 @@
           </div>
 
           <div class="sorting-lines__descriptions">
-            <h2 class="sorting-lines__title  title  title--three  revealator-slideleft revealator-delay">Линия обжарки и
-              очистки кофе от примесей и квакеров
-            </h2>
+            <h2 class="sorting-lines__title  title  title--three  revealator-slideleft revealator-delay">Линия сортировки продуктов пищевой промышленности</h2>
             <p class="sorting-lines__text">Оптимальный подбор и настройка оборудования под ваш продукт.</p>
             <a class="sorting-lines__button  button" href="#contact-form" onclick="slowScroll('#contact-form')">Заказать
               консультацию</a>
@@ -578,36 +591,29 @@
 
     <section class="form" id="contact-form">
       <div class="container">
+
         <h2 class="form__title  title--two">Форма обратной связи</h2>
+
         <form class="write-us__form" method="post">
+          <input type="hidden" name="subject" value="Форма обратной связи">
+          <input type="checkbox" name="agree" value="1" checked="checked" class="agree" />
+
           <div class="form__wrapper">
-
-            <p class="form__item">
-              <label class="form__label" for="write-us-name">Ваше имя:</label>
-              <input class="write-us__input" name="name" id="write-us-name" type="text" placeholder="Имя Фамилия">
-            </p>
-
-            <p class="form__item">
-              <label class="form__label" for="write-us-phone">Ваш телефон:</label>
-              <input class="write-us__input" name="phone" id="write-us-phone" type="tel" placeholder="+7 918 089 99 98">
-            </p>
-
-            <p class="form__item">
-              <label class="form__label" for="write-us-email">Ваш e-mail:</label>
-              <input class="write-us__input" name="email" id="write-us-email" type="email"
-                placeholder="email@example.com">
-            </p>
-
-            <p class="form__item">
-              <label class="form__label" for="write-us-message">Текст письма:</label>
-              <textarea class="write-us__input--text" name="message" id="write-us-message" cols="30"
-                rows="4">В свободной форме</textarea>
-            </p>
-
-          </div>
-
-          <button class="write-us__button  button" type="submit">Отправить</button>
+            <p class="form__item"><label class="form__label" for="write-us-name">Ваше имя:</label> <input
+                class="write-us__input" name="name" id="write-us-name" type="text" placeholder="Имя Фамилия" required
+                autocomplete="off"></p>
+            <p class="form__item"><label class="form__label" for="write-us-phone">Ваш телефон:</label> <input
+                class="write-us__input phone" name="phone" id="write-us-phone" type="tel" placeholder="+7 918 089 99 98"
+                required autocomplete="off"></p>
+            <p class="form__item"><label class="form__label" for="write-us-email">Ваш e-mail:</label> <input
+                class="write-us__input" name="email" id="write-us-email" type="email" placeholder="email@example.com"
+                required autocomplete="off"></p>
+            <p class="form__item"><label class="form__label" for="write-us-message">Текст письма:</label> <textarea
+                class="write-us__input--text" name="message" id="write-us-message" cols="30"
+                rows="4">В свободной форме</textarea></p>
+          </div><button class="write-us__button button" type="submit">Отправить</button>
         </form>
+
       </div>
     </section>
 
@@ -672,21 +678,20 @@
           <div class="my-modal__block">
 
             <h2 class="title  title--two">Заказ звонка</h2>
-            <form class="write-us__form" action="https://echo.htmlacademy.ru" method="post">
-              <div class="modal__container">
-                <p class="modal__item-wrapper">
-                  <label class="write-us__label" for="modal-write-us-name">Ваше имя:</label>
-                  <input class="write-us__input" name="name" id="modal-write-us-name" type="text" placeholder="Имя Фамилия">
-                </p>
 
-                <p class="modal__item-wrapper">
-                  <label class="write-us__label" for="modal-write-us-phone">Ваш телефон:</label>
-                  <input class="write-us__input" name="phone" id="modal-write-us-phone" type="tel"
-                    placeholder="email@example.com">
-                </p>
-              </div>
-              <button class="write-us__button  button" type="submit">Заказать звонок</button>
+            <form class="write-us__form" action="" method="post">
+              <input type="hidden" name="subject" value="Заказать звонок">
+              <input type="checkbox" name="agree" value="1" checked="checked" class="agree" />
+              <div class="modal__container">
+                <p class="modal__item-wrapper"><label class="write-us__label" for="modal-write-us-name">Ваше
+                    имя:</label> <input class="write-us__input" name="name" id="modal-write-us-name" type="text"
+                    placeholder="Имя Фамилия" required autocomplete="off"></p>
+                <p class="modal__item-wrapper"><label class="write-us__label" for="modal-write-us-phone">Ваш
+                    телефон:</label> <input class="write-us__input phone" name="phone" id="modal-write-us-phone"
+                    type="tel" placeholder="" required autocomplete="off"></p>
+              </div><button class="write-us__button button" type="submit">Заказать звонок</button>
             </form>
+
           </div>
         </div>
       </div>
@@ -713,43 +718,43 @@
               <li class="products__item">
                 <div class="products__wrapper">
                   <img class="products__image" src="img/products/agriculture/1/1-2.jpg" alt="Картинка продукта">
-                  <span class="products__name">Рожь</span>
-                </div>
-              </li>
-              <li class="products__item">
-                <div class="products__wrapper">
-                  <img class="products__image" src="img/products/agriculture/1/1-3.jpg" alt="Картинка продукта">
                   <span class="products__name">Овес</span>
                 </div>
               </li>
               <li class="products__item">
                 <div class="products__wrapper">
-                  <img class="products__image" src="img/products/agriculture/1/1-4.jpg" alt="Картинка продукта">
+                  <img class="products__image" src="img/products/agriculture/1/1-3.jpg" alt="Картинка продукта">
                   <span class="products__name">Ячмень</span>
                 </div>
               </li>
               <li class="products__item">
                 <div class="products__wrapper">
-                  <img class="products__image" src="img/products/agriculture/1/1-5.jpg" alt="Картинка продукта">
+                  <img class="products__image" src="img/products/agriculture/1/1-4.jpg" alt="Картинка продукта">
                   <span class="products__name">Кукуруза</span>
                 </div>
               </li>
               <li class="products__item">
                 <div class="products__wrapper">
-                  <img class="products__image" src="img/products/agriculture/1/1-6.jpg" alt="Картинка продукта">
+                  <img class="products__image" src="img/products/agriculture/1/1-5.jpg" alt="Картинка продукта">
                   <span class="products__name">Рис</span>
                 </div>
               </li>
               <li class="products__item">
                 <div class="products__wrapper">
-                  <img class="products__image" src="img/products/agriculture/1/1-7.jpg" alt="Картинка продукта">
+                  <img class="products__image" src="img/products/agriculture/1/1-6.jpg" alt="Картинка продукта">
                   <span class="products__name">Тритикале</span>
                 </div>
               </li>
               <li class="products__item">
                 <div class="products__wrapper">
-                  <img class="products__image" src="img/products/agriculture/1/1-8.jpg" alt="Картинка продукта">
+                  <img class="products__image" src="img/products/agriculture/1/1-7.jpg" alt="Картинка продукта">
                   <span class="products__name">Полба</span>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="products__wrapper">
+                  <img class="products__image" src="img/products/agriculture/1/1-8.jpg" alt="Картинка продукта">
+                  <span class="products__name">Рожь</span>
                 </div>
               </li>
             </ul>
@@ -842,43 +847,43 @@
               <li class="products__item">
                 <div class="products__wrapper">
                   <img class="products__image" src="img/products/agriculture/3/3-2.jpg" alt="Картинка продукта">
-                  <span class="products__name">Нут</span>
-                </div>
-              </li>
-              <li class="products__item">
-                <div class="products__wrapper">
-                  <img class="products__image" src="img/products/agriculture/3/3-3.jpg" alt="Картинка продукта">
-                  <span class="products__name">Маш</span>
-                </div>
-              </li>
-              <li class="products__item">
-                <div class="products__wrapper">
-                  <img class="products__image" src="img/products/agriculture/3/3-4.jpg" alt="Картинка продукта">
                   <span class="products__name">Чечевица</span>
                 </div>
               </li>
               <li class="products__item">
                 <div class="products__wrapper">
-                  <img class="products__image" src="img/products/agriculture/3/3-5.jpg" alt="Картинка продукта">
+                  <img class="products__image" src="img/products/agriculture/3/3-3.jpg" alt="Картинка продукта">
                   <span class="products__name">Горох</span>
                 </div>
               </li>
               <li class="products__item">
                 <div class="products__wrapper">
-                  <img class="products__image" src="img/products/agriculture/3/3-6.jpg" alt="Картинка продукта">
+                  <img class="products__image" src="img/products/agriculture/3/3-4.jpg" alt="Картинка продукта">
                   <span class="products__name">Соя</span>
                 </div>
               </li>
               <li class="products__item">
                 <div class="products__wrapper">
-                  <img class="products__image" src="img/products/agriculture/3/3-7.jpg" alt="Картинка продукта">
+                  <img class="products__image" src="img/products/agriculture/3/3-5.jpg" alt="Картинка продукта">
                   <span class="products__name">Вика</span>
                 </div>
               </li>
               <li class="products__item">
                 <div class="products__wrapper">
-                  <img class="products__image" src="img/products/agriculture/3/3-8.jpg" alt="Картинка продукта">
+                  <img class="products__image" src="img/products/agriculture/3/3-6.jpg" alt="Картинка продукта">
                   <span class="products__name">Люпин</span>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="products__wrapper">
+                  <img class="products__image" src="img/products/agriculture/3/3-7.jpg" alt="Картинка продукта">
+                  <span class="products__name">Нут</span>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="products__wrapper">
+                  <img class="products__image" src="img/products/agriculture/3/3-8.jpg" alt="Картинка продукта">
+                  <span class="products__name">Маш</span>
                 </div>
               </li>
             </ul>
@@ -899,37 +904,37 @@
               <li class="products__item">
                 <div class="products__wrapper">
                   <img class="products__image" src="img/products/agriculture/4/4-1.jpg" alt="Картинка продукта">
-                  <span class="products__name">Рисовая</span>
-                </div>
-              </li>
-              <li class="products__item">
-                <div class="products__wrapper">
-                  <img class="products__image" src="img/products/agriculture/4/4-2.jpg" alt="Картинка продукта">
                   <span class="products__name">Гречневая</span>
                 </div>
               </li>
               <li class="products__item">
                 <div class="products__wrapper">
-                  <img class="products__image" src="img/products/agriculture/4/4-3.jpg" alt="Картинка продукта">
+                  <img class="products__image" src="img/products/agriculture/4/4-2.jpg" alt="Картинка продукта">
                   <span class="products__name">Перловая</span>
                 </div>
               </li>
               <li class="products__item">
                 <div class="products__wrapper">
-                  <img class="products__image" src="img/products/agriculture/4/4-4.jpg" alt="Картинка продукта">
+                  <img class="products__image" src="img/products/agriculture/4/4-3.jpg" alt="Картинка продукта">
                   <span class="products__name">Ячменная</span>
                 </div>
               </li>
               <li class="products__item">
                 <div class="products__wrapper">
+                  <img class="products__image" src="img/products/agriculture/4/4-4.jpg" alt="Картинка продукта">
+                  <span class="products__name">Пшеничная</span>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="products__wrapper">
                   <img class="products__image" src="img/products/agriculture/4/4-5.jpg" alt="Картинка продукта">
-                  <span class="products__name">Овсяная</span>
+                  <span class="products__name">Пшенная</span>
                 </div>
               </li>
               <li class="products__item">
                 <div class="products__wrapper">
                   <img class="products__image" src="img/products/agriculture/4/4-6.jpg" alt="Картинка продукта">
-                  <span class="products__name">Пшеничная</span>
+                  <span class="products__name">Рисовая</span>
                 </div>
               </li>
               <li class="products__item">
@@ -941,7 +946,7 @@
               <li class="products__item">
                 <div class="products__wrapper">
                   <img class="products__image" src="img/products/agriculture/4/4-8.jpg" alt="Картинка продукта">
-                  <span class="products__name">Пшенная</span>
+                  <span class="products__name">Овсяная</span>
                 </div>
               </li>
             </ul>
@@ -1137,25 +1142,25 @@
               <li class="products__item">
                 <div class="products__wrapper">
                   <img class="products__image" src="img/products/food-industry/3/3-9.jpg" alt="Картинка продукта">
-                  <span class="products__name">Морковь</span>
-                </div>
-              </li>
-              <li class="products__item">
-                <div class="products__wrapper">
-                  <img class="products__image" src="img/products/food-industry/3/3-10.jpg" alt="Картинка продукта">
-                  <span class="products__name">Томаты</span>
-                </div>
-              </li>
-              <li class="products__item">
-                <div class="products__wrapper">
-                  <img class="products__image" src="img/products/food-industry/3/3-11.jpg" alt="Картинка продукта">
                   <span class="products__name">Свекла</span>
                 </div>
               </li>
               <li class="products__item">
                 <div class="products__wrapper">
-                  <img class="products__image" src="img/products/food-industry/3/3-12.jpg" alt="Картинка продукта">
+                  <img class="products__image" src="img/products/food-industry/3/3-10.jpg" alt="Картинка продукта">
                   <span class="products__name">Перец</span>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="products__wrapper">
+                  <img class="products__image" src="img/products/food-industry/3/3-11.jpg" alt="Картинка продукта">
+                  <span class="products__name">Морковь</span>
+                </div>
+              </li>
+              <li class="products__item">
+                <div class="products__wrapper">
+                  <img class="products__image" src="img/products/food-industry/3/3-12.jpg" alt="Картинка продукта">
+                  <span class="products__name">Томаты</span>
                 </div>
               </li>
             </ul>
@@ -1362,7 +1367,7 @@
               <li class="products__item">
                 <div class="products__wrapper">
                   <img class="products__image" src="img/products/food-industry/8/8-2.jpg" alt="Картинка продукта">
-                  <span class="products__name">Сухари</span>
+                  <span class="products__name">Сухарики</span>
                 </div>
               </li>
               <li class="products__item">
@@ -1508,7 +1513,19 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/fm.revealator.jquery.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+
   <script src="js/main.js"></script>
+
+  <script language="javascript">
+  var x = document.getElementsByClassName("agree");
+  var i;
+  for (i = 0; i < x.length; i++) {
+    x[i].checked = false;
+  }
+  </script>
 </body>
 
 </html>

@@ -186,7 +186,7 @@
   }
 
   .products__link {
-    margin-bottom: 0;
+    margin: 0;
   }
 
   .products__link:hover::before,
@@ -199,13 +199,30 @@
 @media (max-width: 768px) {
   .products__title {
     margin-bottom: 27px;
+    text-align: center;
   }
 
   .products__name {
-    font-size: 60%;
+    font-size: 18px;
     left: 10px;
     bottom: 15px;
   }
+
+  .products__list {
+    margin: 0 auto;
+    max-width: 90%;
+    justify-content: center;
+  }
+
+  .products__item {
+    max-width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .products__image {
+    width: 100%;
+}
 
 }
 

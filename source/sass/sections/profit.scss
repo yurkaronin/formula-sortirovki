@@ -96,8 +96,22 @@
     margin-top: 0;
   }
 
+  .profit__list {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
   .profit__item {
     max-width: 47%;
+  }
+
+  .profit__title,
+  .profit__subtitle {
+    text-align: center;
+  }
+
+  .profit__subtitle {
+    margin-bottom: 20px;
   }
 }
 

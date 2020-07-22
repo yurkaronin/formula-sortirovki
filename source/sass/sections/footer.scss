@@ -133,5 +133,13 @@
     transform: rotate(40deg);
   }
 
+  .footer__list {
+    justify-content: space-around;
+  }
+
+  .footer__item {
+    max-width: 45%;
+  }
+
 
 }
