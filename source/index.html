@@ -149,9 +149,12 @@
           </div>
 
           <ul class="first-screen__benefits  benefits">
-            <li class="benefits__item  revealator-slideleft revealator-delay">Сортировка на премиум оборудовании Сапсан, Meyer и&nbsp;Julite</li>
-            <li class="benefits__item  revealator-slideright revealator-delay">Быстрая настройка фотосепаратора на вашем продукте</li>
-            <li class="benefits__item  revealator-slideleft revealator-delay">Очистка продукта от мельчайших дефектов</li>
+            <li class="benefits__item  revealator-slideleft revealator-delay">Сортировка на премиум оборудовании Сапсан,
+              Meyer и&nbsp;Julite</li>
+            <li class="benefits__item  revealator-slideright revealator-delay">Быстрая настройка фотосепаратора на вашем
+              продукте</li>
+            <li class="benefits__item  revealator-slideleft revealator-delay">Очистка продукта от мельчайших дефектов
+            </li>
             <li class="benefits__item  revealator-slideright revealator-delay">Качество очистки до 99,99%</li>
           </ul>
 
@@ -224,21 +227,14 @@
     <section class="sorting-lines">
       <div class="container">
 
-        <div class="sorting-lines__wrapper">
-          <div class="sorting-lines__image-wrapper">
-            <img class="sorting-lines__image  revealator-slidedown revealator-delay" src="img/sorting-lines/line-1.jpg"
-              alt="Фотография линии">
-          </div>
-
-          <div class="sorting-lines__descriptions">
-            <h2 class="sorting-lines__title  title  title--three  revealator-slideleft revealator-delay">Линия очистки
-              сельскохозяйственных культур</h2>
-            <p class="sorting-lines__text">Оптимальный подбор и настройка оборудования под ваш продукт.</p>
-            <a class="sorting-lines__button  button" href="#contact-form" onclick="slowScroll('#contact-form')">Заказать
-              консультацию</a>
-          </div>
-
+        <div class="sorting-lines__content">
+          <h2 class="sorting-lines__title  title  title--three  revealator-slideleft revealator-delay">Линия очистки
+            сельскохозяйственных культур</h2>
+          <p class="sorting-lines__text">Оптимальный подбор и настройка оборудования под ваш продукт.</p>
         </div>
+        <a class="sorting-lines__button  button" href="#contact-form" onclick="slowScroll('#contact-form')">Заказать
+          консультацию</a>
+
       </div>
     </section>
 
@@ -315,23 +311,15 @@
       </div>
     </section>
 
-    <section class="sorting-lines">
+    <section class="sorting-lines  sorting-lines--two">
       <div class="container">
-
-        <div class="sorting-lines__wrapper">
-          <div class="sorting-lines__image-wrapper">
-            <img class="sorting-lines__image  revealator-slidedown revealator-once revealator-delay"
-              src="img/sorting-lines/line-2.jpg" alt="Фотография линии">
-          </div>
-
-          <div class="sorting-lines__descriptions">
-            <h2 class="sorting-lines__title  title  title--three  revealator-slideleft revealator-delay">Линия сортировки продуктов пищевой промышленности</h2>
-            <p class="sorting-lines__text">Оптимальный подбор и настройка оборудования под ваш продукт.</p>
-            <a class="sorting-lines__button  button" href="#contact-form" onclick="slowScroll('#contact-form')">Заказать
-              консультацию</a>
-          </div>
-
+        <div class="sorting-lines__content">
+          <h2 class="sorting-lines__title  title  title--three  revealator-slideleft revealator-delay">Линия сортировки
+            продуктов пищевой промышленности</h2>
+          <p class="sorting-lines__text">Оптимальный подбор и настройка оборудования под ваш продукт.</p>
         </div>
+        <a class="sorting-lines__button  button" href="#contact-form" onclick="slowScroll('#contact-form')">Заказать
+          консультацию</a>
       </div>
     </section>
 
@@ -1520,11 +1508,12 @@
   <script src="js/main.js"></script>
 
   <script language="javascript">
-  var x = document.getElementsByClassName("agree");
-  var i;
-  for (i = 0; i < x.length; i++) {
-    x[i].checked = false;
-  }
+    var x = document.getElementsByClassName("agree");
+    var i;
+    for (i = 0; i < x.length; i++) {
+      x[i].checked = false;
+    }
+
   </script>
 </body>
 
