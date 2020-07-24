@@ -16,7 +16,10 @@ function slowScroll(id) {
 	var offset = 0;
 	$('html, body').animate({
 		scrollTop: $(id).offset().top - offset
-	}, 1000);
+  }, 1000);
+
+  $('.header__navigation').removeClass('header__navigation_mobile');
+	$('#nav-icon').removeClass('open');
 
 	return false;
 }
