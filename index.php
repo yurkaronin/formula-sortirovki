@@ -30,7 +30,22 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(66621379, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/66621379" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 </head>
 
 <body class="body">
@@ -97,7 +112,7 @@
         </div>
         <div class="first-screen__wrapper">
           <div class="first-screen__details">
-            <h2 class="first-screen__title title">Сортировка на<br>премиум оборудовании<br>Без потери
+            <h2 class="first-screen__title title revealator-slideup">Сортировка на<br>премиум оборудовании<br>Без потери
               годного сырья</h2>
             <div class="first-screen__promo">
               <p class="first-screen__text">Узнайте стоимость доставки и&nbsp;сортировки за 3 шага</p><a
@@ -105,13 +120,13 @@
             </div>
           </div>
           <ul class="first-screen__benefits benefits">
-            <li class="benefits__item">Сортировка на премиум оборудовании Сапсан,
+            <li class="benefits__item revealator-slideleft revealator-delay">Сортировка на премиум оборудовании Сапсан,
               Meyer и&nbsp;Julite</li>
-            <li class="benefits__item">Быстрая настройка фотосепаратора на вашем
+            <li class="benefits__item revealator-slideright revealator-delay">Быстрая настройка фотосепаратора на вашем
               продукте</li>
-            <li class="benefits__item">Очистка продукта от мельчайших дефектов
+            <li class="benefits__item revealator-slideleft revealator-delay">Очистка продукта от мельчайших дефектов
             </li>
-            <li class="benefits__item">Качество очистки до 99,99%</li>
+            <li class="benefits__item revealator-slideright revealator-delay">Качество очистки до 99,99%</li>
           </ul>
         </div>
       </div>
@@ -132,28 +147,28 @@
     </section>
     <section class="products" id="products">
       <div class="container">
-        <h2 class="products__title title title--two">Сельское хозяйство</h2>
+        <h2 class="products__title title title--two revealator-slideup">Сельское хозяйство</h2>
         <ul class="products__list">
           <li class="products__item"><a class="products__link show_popup" href="#" rel="agriculture-1"><img
-                class="products__image" src="img/products/agriculture/1.jpg" alt="Картинка продукта"> <span
-                class="products__name">Зерновые культуры</span></a></li>
+                class="products__image revealator-zoomin revealator-delay" src="img/products/agriculture/1.jpg"
+                alt="Картинка продукта"> <span class="products__name">Зерновые культуры</span></a></li>
           <li class="products__item"><a class="products__link show_popup" href="#" rel="agriculture-2"><img
-                class="products__image" src="img/products/agriculture/2.jpg" alt="Картинка продукта"> <span
-                class="products__name">Мелкосемянные и&nbsp;масличные культуры</span></a>
+                class="products__image revealator-zoomin revealator-delay" src="img/products/agriculture/2.jpg"
+                alt="Картинка продукта"> <span class="products__name">Мелкосемянные и&nbsp;масличные культуры</span></a>
           </li>
           <li class="products__item"><a class="products__link show_popup" href="#" rel="agriculture-3"><img
-                class="products__image" src="img/products/agriculture/3.jpg" alt="Картинка продукта"> <span
-                class="products__name">Бобовые культуры</span></a></li>
+                class="products__image revealator-zoomin revealator-delay" src="img/products/agriculture/3.jpg"
+                alt="Картинка продукта"> <span class="products__name">Бобовые культуры</span></a></li>
           <li class="products__item"><a class="products__link show_popup" href="#" rel="agriculture-4"><img
-                class="products__image" src="img/products/agriculture/4.jpg" alt="Картинка продукта"> <span
-                class="products__name">Крупы</span></a></li>
+                class="products__image revealator-zoomin revealator-delay" src="img/products/agriculture/4.jpg"
+                alt="Картинка продукта"> <span class="products__name">Крупы</span></a></li>
         </ul>
       </div>
     </section>
     <section class="sorting-lines">
       <div class="container">
         <div class="sorting-lines__content">
-          <h2 class="sorting-lines__title title title--three">Линия очистки
+          <h2 class="sorting-lines__title title title--three revealator-slideleft revealator-delay">Линия очистки
             сельскохозяйственных культур</h2>
           <p class="sorting-lines__text">Оптимальный подбор и настройка оборудования под ваш продукт.</p>
         </div><a class="sorting-lines__button button" href="#contact-form"
@@ -162,39 +177,39 @@
     </section>
     <section class="products products--two">
       <div class="container">
-        <h2 class="products__title title title--two">Пищевая промышленность</h2>
+        <h2 class="products__title title title--two revealator-slideup">Пищевая промышленность</h2>
         <ul class="products__list">
           <li class="products__item"><a class="products__link show_popup" href="#" rel="food-industry-1"><img
-                class="products__image" src="img/products/food-industry/1.jpg" alt="Картинка продукта"> <span
-                class="products__name">Орехи</span></a></li>
+                class="products__image revealator-zoomout revealator-delay" src="img/products/food-industry/1.jpg"
+                alt="Картинка продукта"> <span class="products__name">Орехи</span></a></li>
           <li class="products__item"><a class="products__link show_popup" href="#" rel="food-industry-2"><img
-                class="products__image" src="img/products/food-industry/2.jpg" alt="Картинка продукта"> <span
-                class="products__name">Замороженные продукты</span></a></li>
+                class="products__image revealator-zoomout revealator-delay" src="img/products/food-industry/2.jpg"
+                alt="Картинка продукта"> <span class="products__name">Замороженные продукты</span></a></li>
           <li class="products__item"><a class="products__link show_popup" href="#" rel="food-industry-3"><img
-                class="products__image" src="img/products/food-industry/3.jpg" alt="Картинка продукта"> <span
-                class="products__name">Сушеные овощи и&nbsp;фрукты</span></a></li>
+                class="products__image revealator-zoomout revealator-delay" src="img/products/food-industry/3.jpg"
+                alt="Картинка продукта"> <span class="products__name">Сушеные овощи и&nbsp;фрукты</span></a></li>
           <li class="products__item"><a class="products__link show_popup" href="#" rel="food-industry-4"><img
-                class="products__image" src="img/products/food-industry/4.jpg" alt="Картинка продукта"> <span
-                class="products__name">Морепродукты</span></a></li>
+                class="products__image revealator-zoomout revealator-delay" src="img/products/food-industry/4.jpg"
+                alt="Картинка продукта"> <span class="products__name">Морепродукты</span></a></li>
           <li class="products__item"><a class="products__link show_popup" href="#" rel="food-industry-5"><img
-                class="products__image" src="img/products/food-industry/5.jpg" alt="Картинка продукта"> <span
-                class="products__name">Консервы и&nbsp;полуфабрикаты</span></a></li>
+                class="products__image revealator-zoomout revealator-delay" src="img/products/food-industry/5.jpg"
+                alt="Картинка продукта"> <span class="products__name">Консервы и&nbsp;полуфабрикаты</span></a></li>
           <li class="products__item"><a class="products__link show_popup" href="#" rel="food-industry-6"><img
-                class="products__image" src="img/products/food-industry/6.jpg" alt="Картинка продукта"> <span
-                class="products__name">Кофе, чай</span></a></li>
+                class="products__image revealator-zoomout revealator-delay" src="img/products/food-industry/6.jpg"
+                alt="Картинка продукта"> <span class="products__name">Кофе, чай</span></a></li>
           <li class="products__item"><a class="products__link show_popup" href="#" rel="food-industry-7"><img
-                class="products__image" src="img/products/food-industry/7.jpg" alt="Картинка продукта"> <span
-                class="products__name">Специи</span></a></li>
+                class="products__image revealator-zoomout revealator-delay" src="img/products/food-industry/7.jpg"
+                alt="Картинка продукта"> <span class="products__name">Специи</span></a></li>
           <li class="products__item"><a class="products__link show_popup" href="#" rel="food-industry-8"><img
-                class="products__image" src="img/products/food-industry/8.jpg" alt="Картинка продукта"> <span
-                class="products__name">Снэки</span></a></li>
+                class="products__image revealator-zoomout revealator-delay" src="img/products/food-industry/8.jpg"
+                alt="Картинка продукта"> <span class="products__name">Снэки</span></a></li>
         </ul>
       </div>
     </section>
     <section class="sorting-lines sorting-lines--two">
       <div class="container">
         <div class="sorting-lines__content">
-          <h2 class="sorting-lines__title title title--three">Линия сортировки
+          <h2 class="sorting-lines__title title title--three revealator-slideleft revealator-delay">Линия сортировки
             продуктов пищевой промышленности</h2>
           <p class="sorting-lines__text">Оптимальный подбор и настройка оборудования под ваш продукт.</p>
         </div><a class="sorting-lines__button button" href="#contact-form"
@@ -203,31 +218,31 @@
     </section>
     <section class="products products--three">
       <div class="container">
-        <h2 class="products__title title title--two">Переработка вторсырья</h2>
+        <h2 class="products__title title title--two revealator-slideup">Переработка вторсырья</h2>
         <ul class="products__list">
           <li class="products__item"><a class="products__link show_popup" href="#" rel="recycling-1"><img
-                class="products__image" src="img/products/recycling/1.jpg" alt="Картинка продукта"> <span
-                class="products__name">Пластик</span></a></li>
+                class="products__image revealator-rotateleft revealator-delay" src="img/products/recycling/1.jpg"
+                alt="Картинка продукта"> <span class="products__name">Пластик</span></a></li>
           <li class="products__item"><a class="products__link show_popup" href="#" rel="recycling-2"><img
-                class="products__image" src="img/products/recycling/2.jpg" alt="Картинка продукта"> <span
-                class="products__name">Пластмассы</span></a></li>
+                class="products__image revealator-rotateleft revealator-delay" src="img/products/recycling/2.jpg"
+                alt="Картинка продукта"> <span class="products__name">Пластмассы</span></a></li>
           <li class="products__item"><a class="products__link show_popup" href="#" rel="recycling-3"><img
-                class="products__image" src="img/products/recycling/3.jpg" alt="Картинка продукта"> <span
-                class="products__name">Стеклобой</span></a></li>
+                class="products__image revealator-rotateleft revealator-delay" src="img/products/recycling/3.jpg"
+                alt="Картинка продукта"> <span class="products__name">Стеклобой</span></a></li>
           <li class="products__item"><a class="products__link show_popup" href="#" rel="recycling-4"><img
-                class="products__image" src="img/products/recycling/4.jpg" alt="Картинка продукта"> <span
-                class="products__name">Бумага, картон</span></a></li>
+                class="products__image revealator-rotateleft revealator-delay" src="img/products/recycling/4.jpg"
+                alt="Картинка продукта"> <span class="products__name">Бумага, картон</span></a></li>
         </ul>
       </div>
     </section>
     <section class="technologies" id="technologies">
       <div class="container">
-        <h2 class="technologies__title title title--two">Наши технологии – гарантия качества очистки
+        <h2 class="technologies__title title title--two revealator-slideup">Наши технологии – гарантия качества очистки
         </h2>
         <div class="technologies__wrapper">
           <ul class="technologies__list technologies__list--first">
-            <li class="technologies__item"><img class="technologies__image" src="img/technologies/technologies-1.jpg"
-                alt="Фотография инновационных технологий">
+            <li class="technologies__item"><img class="technologies__image revealator-slidedown revealator-delay"
+                src="img/technologies/technologies-1.jpg" alt="Фотография инновационных технологий">
               <div class="technologies__details">
                 <h3 class="technologies__name">3D анализ продукта в процессе сортировки</h3>
                 <div class="technologies__descriptions">Анализ продукта со всех сторон. Распознавание примесей сразу по
@@ -235,8 +250,8 @@
                   позволяют удалять любые засорители.</div>
               </div>
             </li>
-            <li class="technologies__item"><img class="technologies__image" src="img/technologies/technologies-2.jpg"
-                alt="Фотография инновационных технологий">
+            <li class="technologies__item"><img class="technologies__image revealator-slidedown"
+                src="img/technologies/technologies-2.jpg" alt="Фотография инновационных технологий">
               <div class="technologies__details">
                 <h3 class="technologies__name">Европейская оптика и комплектующие</h3>
                 <div class="technologies__descriptions">Используем только профессиональные камеры, объективы и
@@ -245,8 +260,8 @@
             </li>
           </ul>
           <ul class="technologies__list technologies__list--second">
-            <li class="technologies__item"><img class="technologies__image" src="img/technologies/technologies-3.jpg"
-                alt="Фотография инновационных технологий">
+            <li class="technologies__item"><img class="technologies__image revealator-slidedown"
+                src="img/technologies/technologies-3.jpg" alt="Фотография инновационных технологий">
               <div class="technologies__details">
                 <h3 class="technologies__name">Бережная сортировка без потерь</h3>
                 <div class="technologies__descriptions">
@@ -266,10 +281,11 @@
     </section>
     <section class="profit">
       <div class="container">
-        <h2 class="profit__title title">Зарабатывайте больше<br>на идеально чистом продукте</h2>
+        <h2 class="profit__title title revealator-slideup">Зарабатывайте больше<br>на идеально чистом продукте</h2>
         <p class="profit__subtitle subtitle">Чистим сырье до 99,99%, сохраняем объем годного продукта</p>
         <ul class="profit__list">
-          <li class="profit__item"><img class="profit__image" src="img/profit/profit-1.jpg" alt="Картинка преимущества">
+          <li class="profit__item"><img class="profit__image revealator-slideup revealator-delay"
+              src="img/profit/profit-1.jpg" alt="Картинка преимущества">
             <div class="profit__wrapper">
               <h3 class="profit__name">Полезные продукты – здоровое питание</h3>
               <p class="profit__description">Наши оптические сортировщики и инспекционное оборудование гарантируют
@@ -277,35 +293,40 @@
                 продуктов от вредных и опасных примесей.</p>
             </div>
           </li>
-          <li class="profit__item"><img class="profit__image" src="img/profit/profit-2.jpg" alt="Картинка преимущества">
+          <li class="profit__item"><img class="profit__image revealator-slideright revealator-delay"
+              src="img/profit/profit-2.jpg" alt="Картинка преимущества">
             <div class="profit__wrapper">
               <h3 class="profit__name">Экологически чистое производство и переработка пластика</h3>
               <p class="profit__description">Оборудование Сапсан и Meyer разделяет пластик и полимеры по видам, это
                 важно для дальнейшей переработки сырья и его термической обработки.</p>
             </div>
           </li>
-          <li class="profit__item"><img class="profit__image" src="img/profit/profit-3.jpg" alt="Картинка преимущества">
+          <li class="profit__item"><img class="profit__image revealator-slideleft revealator-delay"
+              src="img/profit/profit-3.jpg" alt="Картинка преимущества">
             <div class="profit__wrapper">
               <h3 class="profit__name">Репутация и конкурентоспособность производителя</h3>
               <p class="profit__description">Чистота и качество продукта влияет на оценку потребителя, продукт с
                 хорошими внешними и физическими свойствами всегда пользуется высоким спросом.</p>
             </div>
           </li>
-          <li class="profit__item"><img class="profit__image" src="img/profit/profit-4.jpg" alt="Картинка преимущества">
+          <li class="profit__item"><img class="profit__image revealator-slideleft revealator-delay"
+              src="img/profit/profit-4.jpg" alt="Картинка преимущества">
             <div class="profit__wrapper">
               <h3 class="profit__name">Экспортное качество продукта</h3>
               <p class="profit__description">Только фотосепараторы Сапсан и Meyer способны довести сырье до экспортного
                 качества с финальной засоренностью не более 1%.</p>
             </div>
           </li>
-          <li class="profit__item"><img class="profit__image" src="img/profit/profit-5.jpg" alt="Картинка преимущества">
+          <li class="profit__item"><img class="profit__image revealator-slideright revealator-delay"
+              src="img/profit/profit-5.jpg" alt="Картинка преимущества">
             <div class="profit__wrapper">
               <h3 class="profit__name">Высокая добавленная стоимость</h3>
               <p class="profit__description">Благодаря услугам сортировки представители бизнеса выигрывают на разнице
                 покупной цены исходного сырья и цены продукта для конечного потребителя.</p>
             </div>
           </li>
-          <li class="profit__item"><img class="profit__image" src="img/profit/profit-6.jpg" alt="Картинка преимущества">
+          <li class="profit__item"><img class="profit__image revealator-slideup revealator-delay"
+              src="img/profit/profit-6.jpg" alt="Картинка преимущества">
             <div class="profit__wrapper">
               <h3 class="profit__name">Автоматизация ручного труда</h3>
               <p class="profit__description">Сортировка на фотосепараторе снижает трудозатраты и экономит ваше время.
@@ -316,22 +337,22 @@
       </div>
     </section>
     <section class="sale" id="sale">
-      <div class="container"><span class="sale__title title">Предоставляем<br>скидки за большой объем
+      <div class="container"><span class="sale__title title revealator-slideup">Предоставляем<br>скидки за большой объем
           сортировки – от 300 тонн</span>
-        <p class="sale__subtitle">Для постоянных клиентов действуют персональные предложения</p>
-        <p class="sale__subtitle">Гибкая ценовая политика компании «Формулы Сортировки», а также
+        <p class="sale__subtitle revealator-slidedown">Для постоянных клиентов действуют персональные предложения</p>
+        <p class="sale__subtitle revealator-slideleft">Гибкая ценовая политика компании «Формулы Сортировки», а также
           продуманная система скидок и корректировки цен в условиях изменения конъюнктуры рынка, позволяют нам
           предложить конкурентоспособные цены нашим постоянным клиентам и новым заказчикам.</p>
-        <p class="sale__subtitle">Текущие цены на всю предлагаемую продукцию и услуги Вы можете
-          узнавать у менеджера или посредством запроса обратной связи.</p><span class="sale__min-text">* детали и
-          условия акций уточняйте у менеджера. Контакты указаны
+        <p class="sale__subtitle revealator-slideright">Текущие цены на всю предлагаемую продукцию и услуги Вы можете
+          узнавать у менеджера или посредством запроса обратной связи.</p><span
+          class="sale__min-text revealator-slidedown">* детали и условия акций уточняйте у менеджера. Контакты указаны
           на сайте.</span>
       </div>
     </section>
     <section class="test">
       <div class="container">
         <div class="test__info">
-          <h2 class="test__title title title--two">Испытания – бесплатно</h2>
+          <h2 class="test__title title title--two revealator-slideup">Испытания – бесплатно</h2>
           <div class="test__description"><b>Хотите оценить качество сортировки?</b><br>
             <p>Можем провести пробную сортировку вашего продукта. Лично в вашем присутствии, направим протокол испытаний
               или видеоотчет. Если вы не можете приехать - просто вышлите нам тестовую партию вашего продукта. Протокол
@@ -343,11 +364,11 @@
     </section>
     <section class="steps" id="steps">
       <div class="container">
-        <h2 class="steps__title title--two">Как мы работаем</h2>
+        <h2 class="steps__title title--two revealator-slideup">Как мы работаем</h2>
         <p class="steps__text">Обеспечиваем полный цикл услуг от логистики до сортировки сырья. Профессиональная служба
           сервиса работает 24/7</p>
         <div class="steps__wrapper">
-          <ol class="steps__list">
+          <ol class="steps__list revealator-slidedown">
             <li class="steps__item" rel="step1">
               <h3 class="steps__name">Заявка</h3>
               <p class="steps__details">Оставьте заявку. С вами свяжется специалист для уточнения деталей</p>
@@ -431,8 +452,7 @@
           <ul class="footer__details-item">
             <li>Сортировка в Воронеже: 394014, Воронежская область, город Воронеж, улица Лебедева, 10
             </li>
-            <li>Сортировка в Краснодаре: 350010, Краснодарский край, город Краснодар, улица ул. Ростовское шоссе, 74/4
-            </li>
+            <li>Сортировка в Краснодаре: 350010, Краснодарский край, город Краснодар, улица ул. Ростовское шоссе, 74/4</li>
           </ul>
         </li>
         <li class="footer__item">
@@ -1127,18 +1147,35 @@
         </div>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="js/swiper.min.js"></script>
-    <script src="js/main.js"></script>
-    <script language="javascript">
-      var x = document.getElementsByClassName("agree");
-      var i;
-      for (i = 0; i < x.length; i++) {
-        x[i].checked = false;
-      }
+  </section><!-- BEGIN CONVERSUS -->
+  <script type="text/javascript">
+  (function(i, s, o, g, a, m) {
+    i["PVWatcherObj"] = {
+      id: 4420,
+      ver: 1.01
+    };
 
-    </script>
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g + "?" + (new Date).getTime();
+    m.parentNode.insertBefore(a, m)
+  })(window, document, "script", "//lk.conversus.pro/smartvoronka/watcher-prod/pv.temporary.js");
+  </script><!-- END CONVERSUS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/fm.revealator.jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+  <script src="js/main.js"></script>
+  <script language="javascript">
+  var x = document.getElementsByClassName("agree");
+  var i;
+  for (i = 0; i < x.length; i++) {
+    x[i].checked = false;
+  }
+  </script>
 </body>
 
 </html>
