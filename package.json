@@ -5,7 +5,7 @@
   "description": "Landing Page по продаже услуг сортировки продуктов на фотосепараторах в г. Воронеж ",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixer": "9.8.x",
+    "autoprefixer": "^9.8.6",
     "browser-sync": "^2.26.14",
     "del": "^5.1.0",
     "gulp": "4.0.x",
@@ -22,7 +22,7 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
-    "posthtml-include": "^1.4.3",
+    "posthtml-include": "^1.6.2",
     "readable-stream": "^3.6.0",
     "stylelint": "13.6.x",
     "stylelint-config-htmlacademy": "0.1.x"
