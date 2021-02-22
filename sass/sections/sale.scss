@@ -1,0 +1,59 @@
+.sale {
+  background-color: $color-1;
+  background-image: url("../img/background/bg-discount.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 90px 0;
+  position: relative;
+  color: $white;
+}
+
+.sale__title {
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%;
+  color: $white;
+  margin-bottom: 12px;
+  display: block;
+  max-width: 700px;
+}
+
+.sale__subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 130%;
+  color: $white;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.sale__min-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 130%;
+  color: $white;
+}
+
+@media (max-width: 768px) {
+  .sale__title {
+    max-width: 500px;
+  }
+
+  .sale__subtitle {
+    font-size: 16px;
+    margin: 0 0 30px;
+  }
+
+  .sale__min-text {
+    font-size: 12px;
+    opacity: 0.7;
+  }
+
+  .sale {
+    padding: 50px 0 30px;
+  }
+
+}

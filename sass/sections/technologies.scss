@@ -1,0 +1,170 @@
+.technologies {
+  background-color: $color-4;
+  padding: 75px 0 585px;
+  overflow: hidden;
+}
+
+.technologies__title {
+  max-width: 725px;
+  margin-bottom: 60px;
+}
+
+.technologies__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.technologies__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+}
+
+.technologies__list--first {
+  max-width: 635px;
+}
+
+.technologies__list--second {
+  max-width: 445px;
+}
+
+.technologies__item {
+  background-color: $white;
+  color: $black;
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 75px;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.07);
+}
+
+.technologies__details {
+  padding: 15px 35px 5px;
+  max-width: 350px;
+}
+
+
+.technologies__photo {
+  background-image: url("../img/technologies/technologies-1.jpg");
+  max-width: 285px;
+  height: 309px;
+}
+
+.technologies__list--second .technologies__item {
+  flex-direction: column;
+  padding-bottom: 60px;
+  margin: 0;
+}
+
+.technologies__item:last-child {
+  margin-bottom: 0;
+}
+
+.technologies__descriptions ul {
+  list-style: url("../img/icons/icon-marker.svg");
+  margin: 0;
+  padding: 0;
+}
+
+.technologies__wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.technologies__wrapper::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../img/background/bg-products-3-left.png");
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 390px;
+  left: -235px;
+  bottom: -165px;
+  z-index: -1;
+}
+
+.technologies__wrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../img/background/bg-products-3-right.png");
+  background-repeat: no-repeat;
+  width: 644px;
+  height: 438px;
+  right: -299px;
+  top: -300px;
+  z-index: 1;
+}
+
+.technologies__image {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 1145px) {
+  .technologies__item {
+    max-width: 100%;
+  }
+
+  .technologies__list--second .technologies__item {
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .technologies__item,
+  .technologies__item:last-child {
+    margin-bottom: 20px;
+  }
+
+  .technologies__list--first,
+  .technologies__list--second {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .technologies__image {
+    max-width: 285px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .technologies__wrapper::after,
+  .technologies__wrapper::before {
+    display: none;
+  }
+
+  .technologies {
+    padding-bottom: 40px;
+  }
+
+
+}
+
+@media (max-width: 600px) {
+
+  .technologies__item,
+  .technologies__item:last-child {
+    margin-bottom: 20px;
+    flex-direction: column;
+    max-width: 285px;
+  }
+
+  .technologies__details {
+    padding-bottom: 25px;
+  }
+
+
+}

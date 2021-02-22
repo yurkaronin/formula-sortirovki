@@ -1,0 +1,35 @@
+.slider-top {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  &::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  &__image {
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 3s ease-in-out;
+    transform: scale(0.8);
+  }
+  .swiper-slide-active {
+    .slider-top__image {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+}

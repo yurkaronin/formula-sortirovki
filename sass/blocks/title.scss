@@ -1,0 +1,61 @@
+.title {
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%;
+  color: $black;
+  max-width: 100%;
+  margin: 0;
+}
+
+.title--two {
+  font-size: 46px;
+  line-height: 130%;
+}
+
+.title--three {
+  font-size: 28px;
+}
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 40px;
+  }
+
+  .title--two {
+    font-size: 36px;
+  }
+
+  .title--three {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .title--three {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .title,
+  .title--two,
+  .title--three {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 410px) {
+  .title--two {
+    font-size: 21px;
+  }
+  .title--three {
+    font-size: 19px;
+  }
+
+}
